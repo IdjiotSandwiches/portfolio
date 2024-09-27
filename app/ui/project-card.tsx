@@ -15,7 +15,7 @@ export const ProjectCard: React.FC<CardProps> = ({ srcImage, altImage, title, de
 			  alt={ altImage }
 			  className="object-cover rounded-xl"
 			  src={ srcImage }
-			  width={270}
+			  width={250}
 			/>
 		 </CardBody>
 		 <CardFooter className="pb-0 pt-2 px-4 flex-col items-start">
