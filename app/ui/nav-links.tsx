@@ -20,6 +20,8 @@ const links = [
 ];
 
 export default function NavLinks() {
+	const pathname = usePathname();
+
 	return (
 		<div className="flex gap-10 font-semibold">
 			{links.map((link) => {
@@ -27,7 +29,12 @@ export default function NavLinks() {
 					<Link
 						key={link.name}
 						href={link.href}
-						className=""
+						className={clsx(
+							'hover:text-orange-500 transition-colors',
+							{
+								'text-orange-500': pathname === link.href,
+							},
+						)}
 					>
 						<p className="hidden md:block">{link.name}</p>
 					</Link>
