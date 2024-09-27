@@ -1,34 +1,43 @@
-"use client";
+import { TimelineCell } from "@/app/ui/timeline-cell";
 
-import * as React from 'react';
-import Image from 'next/image';
-
-interface TimelineProps {
-	time: string;
-	studyPlace: string;
-	desc?: string;
-	path?: string[];
-}
-
-export const Timeline: React.FC<TimelineProps> = ({ time, studyPlace, desc, path }) => {
-  return (
-	<li className="mb-10 ms-4">
-		<div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-		<time className="mb-1 text-md font-normal leading-none text-gray-400 dark:text-gray-500">{ time }</time>
-		<h3 className="text-xl font-semibold text-gray-900 dark:text-white">{ studyPlace }</h3>
-		<p className='text-lg mb-2 text-gray-500 dark:text-gray-600'>{ desc }</p>
-		<div className='flex gap-2'>
-			{path?.map((item) => {
-				return (
-					<Image 
-						src={item}
-						alt={item}
-						width={45}
-						height={45}
-					/>
-				);
-			})}
-		</div>
-	</li>             
-  );
+export default function Timeline() {
+	return (
+		<ol className="relative border-s border-gray-200 dark:border-gray-700 mb-4">
+			<TimelineCell 
+				time="2019 - 2022" 
+				studyPlace="SMAN 19 Jakarta" 
+				desc="As a student"
+			/>
+			<TimelineCell 
+				time="2022 - Present" 
+				studyPlace="Bina Nusantara University" 
+				desc="As a student"
+				path={[
+					'svg/html.svg',
+					'svg/css.svg',
+					'svg/js.svg',
+					'svg/php.svg',
+					'svg/laravel.svg',
+					'svg/mysql.svg',
+					'svg/figma.svg',
+					'svg/python.svg',
+				]}
+			/>
+			<TimelineCell 
+				time="2024 - Present" 
+				studyPlace="Associate Member of Bina Nusantara IT Division" 
+				desc="Working as web developer." 
+				path={[
+					'svg/html.svg',
+					'svg/css.svg',
+					'svg/js.svg',
+					'svg/php.svg',
+					'svg/laravel.svg',
+					'svg/mysql.svg',
+					'svg/jquery.svg',
+					'svg/git.svg'
+				]}
+			/>
+		</ol>
+	);
 }
