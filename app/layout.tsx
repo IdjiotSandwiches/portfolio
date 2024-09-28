@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { roboto } from "@/app/ui/fonts";
 import { NextUIProvider } from "@nextui-org/react";
+import NavigationBar from "@/app/ui/navigation-bar";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -26,11 +27,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body
         className={`${roboto.className} antialiased`}
       >
-        <NextUIProvider>
+        <NavigationBar />
+        <NextUIProvider className="flex justify-center">
           {children}
         </NextUIProvider>
       </body>

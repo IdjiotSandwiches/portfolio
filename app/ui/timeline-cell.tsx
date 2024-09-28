@@ -2,22 +2,38 @@
 
 import * as React from 'react';
 import { LogoContainer } from '@/app/ui/logo-container';
+import TimelineItem from '@mui/lab/TimelineItem';
+import TimelineSeparator from '@mui/lab/TimelineSeparator';
+import TimelineConnector from '@mui/lab/TimelineConnector';
+import TimelineContent from '@mui/lab/TimelineContent';
+import TimelineDot from '@mui/lab/TimelineDot';
+import Typography from '@mui/material/Typography';
+import { ReactNode } from 'react';
 
 interface TimelineProps {
 	time: string;
 	studyPlace: string;
-	desc?: string;
-	path?: string[];
+	desc: string;
+	icon?: ReactNode;
 }
 
-export const TimelineCell: React.FC<TimelineProps> = ({ time, studyPlace, desc, path }) => {
+export const TimelineCell: React.FC<TimelineProps> = ({ time, studyPlace, desc, icon }) => {
   return (
-	<li className="mb-20 ms-4">
-		<div className="absolute w-3 h-3 bg-gray-300 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-		<time className="mb-1 text-md font-normal leading-none text-gray-400 dark:text-gray-500">{ time }</time>
-		<h3 className="text-xl font-semibold text-gray-900 dark:text-white">{ studyPlace }</h3>
-		<p className='text-lg mb-2 text-gray-500 dark:text-gray-600'>{ desc }</p>
-		<LogoContainer path={ path } />
-	</li>             
+	<TimelineItem>
+		<TimelineSeparator>
+			<TimelineConnector sx={{ bgcolor: "rgb(254 215 170)" }} />
+				<TimelineDot sx={{ bgcolor: "rgb(249 115 22)" }}>
+					{icon}
+				</TimelineDot>
+			<TimelineConnector sx={{ bgcolor: "rgb(254 215 170)" }} />
+		</TimelineSeparator>
+		<TimelineContent sx={{ py: '40px', px: 2 }}>
+			<Typography className="text-gray-400">{ time }</Typography>
+			<Typography className="font-semibold text-gray-900" variant="h6" component="span">
+				{ studyPlace }
+			</Typography>
+			<Typography className="text-gray-500">{ desc }</Typography>
+		</TimelineContent>
+	</TimelineItem>             
   );
 }
