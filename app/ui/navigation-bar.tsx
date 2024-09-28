@@ -29,20 +29,20 @@ export default function NavigationBar() {
 	
 
 	return (
-		<Navbar maxWidth="xl" onMenuOpenChange={setIsMenuOpen}>
+		<Navbar maxWidth="xl" onMenuOpenChange={ setIsMenuOpen } isBlurred={ false }>
 			<NavbarContent>
 				<NavbarMenuToggle
 					aria-label={isMenuOpen ? "Close menu" : "Open menu"}
 					className="sm:hidden"
 				/>
-				<NavbarBrand>
+				<NavbarBrand className="flex gap-2">
 					<Image 
 						src="/Logo.png"
 						width={50}
 						height={50}
 						alt="Logo"
 					/>		
-					<p className="font-bold text-inherit">Idjiot Sandwiches</p>
+					<p className="text-lg text-primary font-semibold text-inherit">Idjiot Sandwiches</p>
 				</NavbarBrand>
 			</NavbarContent>
 			<NavbarContent className="hidden sm:flex gap-4" justify="center">

@@ -32,7 +32,7 @@ export default function RootLayout({
         className={`${roboto.className} antialiased`}
       >
         <NavigationBar />
-        <NextUIProvider className="flex justify-center">
+        <NextUIProvider className="">
           {children}
         </NextUIProvider>
       </body>

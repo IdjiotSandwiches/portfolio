@@ -9,7 +9,7 @@ export const NavMenuLinks: React.FC<NavMenuLinksProps> = ({ name, path }) => {
 	return (
 		<NavbarMenuItem>
 			<Link
-				className="w-full"
+				className="w-full hover:text-primary"
 				href={ path }
 				size="lg"
 				color="foreground"

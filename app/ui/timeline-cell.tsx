@@ -21,11 +21,11 @@ export const TimelineCell: React.FC<TimelineProps> = ({ time, studyPlace, desc, 
   return (
 	<TimelineItem>
 		<TimelineSeparator>
-			<TimelineConnector sx={{ bgcolor: "rgb(254 215 170)" }} />
-				<TimelineDot sx={{ bgcolor: "rgb(249 115 22)" }}>
+			<TimelineConnector sx={{ bgcolor: "rgb(217 119 6)" }} />
+				<TimelineDot sx={{ bgcolor: "rgb(217 119 6)" }}>
 					{icon}
 				</TimelineDot>
-			<TimelineConnector sx={{ bgcolor: "rgb(254 215 170)" }} />
+			<TimelineConnector sx={{ bgcolor: "rgb(217 119 6)" }} />
 		</TimelineSeparator>
 		<TimelineContent sx={{ py: '40px', px: 2 }}>
 			<Typography className="text-gray-400">{ time }</Typography>

@@ -8,7 +8,11 @@ interface NavLinksProps {
 export const NavLinks: React.FC<NavLinksProps> = ({ name, path }) => {
 	return (
 		<NavbarItem>
-			<Link color="foreground" href={ path }>
+			<Link 
+				className="hover:text-primary"
+				color="foreground" 
+				href={ path }
+			>
 				{ name }
 			</Link>
 		</NavbarItem>

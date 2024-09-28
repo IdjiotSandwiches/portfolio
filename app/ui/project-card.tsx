@@ -9,7 +9,7 @@ interface CardProps {
 
 export const ProjectCard: React.FC<CardProps> = ({ srcImage, altImage, title, desc }) => {
 	return (
-	  <Card className="py-4">
+	  <Card className="py-4" isPressable>
 		 <CardBody className="overflow-visible py-2">
 			<Image
 			  alt={ altImage }
