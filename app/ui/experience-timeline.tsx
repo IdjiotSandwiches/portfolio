@@ -14,7 +14,8 @@ export default function ExperienceTimeline() {
 			<TimelineCell 
 				time="2024 - Present"
 				studyPlace="Associate Member of Bina Nusantara IT Division"
-				desc="Web Developer"
+				desc="Web Developer. 
+				Currently working on Penomoran Ijazah dan Sertifikat Nasional & Penyetaraan Ijazah Luar Negeri"
 				icon={ <WorkIcon sx={{ fontSize: "35px" }} /> }
 			/>
 		</Timeline>
