@@ -19,7 +19,7 @@ export const ProjectCard: React.FC<CardProps> = ({ srcImage, altImage, title, de
 			/>
 		 </CardBody>
 		 <CardFooter className="pb-0 pt-2 px-4 flex-col items-start">
-			<h3 className="text-xl font-semibold">{ title }</h3>
+			<h3 className="text-xl font-medium">{ title }</h3>
 			<p>{ desc }</p>
 		 </CardFooter>
 	  </Card>

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { roboto } from "@/app/ui/fonts";
+import { fredoka } from "@/app/ui/fonts";
 import { NextUIProvider } from "@nextui-org/react";
 import NavigationBar from "@/app/ui/navigation-bar";
 
@@ -29,10 +29,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${roboto.className} antialiased`}
+        className={`${fredoka.className} antialiased`}
       >
         <NavigationBar />
-        <NextUIProvider className="">
+        <NextUIProvider className="flex justify-center w-full">
           {children}
         </NextUIProvider>
       </body>
