@@ -85,6 +85,7 @@ const config: Config = {
       },
     }),
     flowbite.plugin(),
+    require('tailwind-scrollbar'),
   ],
 };
 export default config;

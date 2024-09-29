@@ -9,7 +9,7 @@ export const NavLinks: React.FC<NavLinksProps> = ({ name, path }) => {
 	return (
 		<NavbarItem>
 			<Link 
-				className="hover:text-primary transition-colors 0.01s"
+				className="font-medium hover:text-primary transition-colors 0.01s"
 				color="foreground" 
 				href={ path }
 			>

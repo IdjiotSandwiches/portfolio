@@ -25,3 +25,15 @@ body {
     text-wrap: balance;
   }
 }
+
+@layer base {
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(217 119 6);
+    border-radius: 5px;
+  }
+}
