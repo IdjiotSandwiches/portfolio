@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function LandingPageSection() {
 	return (
-		<section id="/" className="min-h-[calc(100vh-40vh)] flex flex-col lg:flex-row items-center justify-center lg:justify-start gap-5 lg:gap-20">
+		<section id="/" className="pt-20 min-h-[calc(100vh-40vh)] flex flex-col lg:flex-row items-center justify-center lg:justify-start gap-5 lg:gap-20">
         <div className="text-center lg:text-right">
           <h3 className="text-gray-700 text-2xl">Hi there.</h3>
           <h2 className="text-gray-900 text-3xl font-medium">I'm Vincen</h2>

@@ -7,7 +7,7 @@ export default function EducationSection() {
 	return (
 		<section id="education" className="pt-20 min-h-[calc(100vh-40vh)]">
         <h1 className="drop-shadow-sm text-5xl text-primary text-center font-medium mb-8">Education Journey</h1>
-        <Timeline position="alternate">
+        <Timeline position="alternate" className="lg:mx-32">
 				<TimelineCell 
 					time="2019 - 2022"
 					studyPlace="SMAN 19 Jakarta"
