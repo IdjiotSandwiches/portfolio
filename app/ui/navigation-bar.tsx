@@ -4,7 +4,7 @@ import Image from 'next/image';
 import React from 'react';
 import { NavLinks } from '@/app/ui/nav-links';
 import { NavMenuLinks } from '@/app/ui/nav-menu-links';
-import { Navbar, NavbarBrand, NavbarContent, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link } from "@nextui-org/react";
+import { Navbar, NavbarBrand, NavbarContent, NavbarMenuToggle, NavbarMenu, Link } from "@nextui-org/react";
 
 export default function NavigationBar() {
 	const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -35,7 +35,7 @@ export default function NavigationBar() {
 					aria-label={isMenuOpen ? "Close menu" : "Open menu"}
 					className="sm:hidden"
 				/>
-				<NavbarBrand className="flex gap-2">
+				<Link className="flex gap-2" href="#">
 					<Image 
 						src="/Logo.png"
 						width={50}
@@ -43,7 +43,7 @@ export default function NavigationBar() {
 						alt="Logo"
 					/>		
 					<p className="text-lg text-primary font-medium text-inherit">Idjiot Sandwiches</p>
-				</NavbarBrand>
+				</Link>
 			</NavbarContent>
 			<NavbarContent className="hidden sm:flex gap-4" justify="center">
 				{menuItems.map((item, index) => (
