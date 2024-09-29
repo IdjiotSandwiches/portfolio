@@ -6,7 +6,7 @@ interface LogoContainerProps {
 
 export const LogoContainer: React.FC<LogoContainerProps> = ({ path }) => {
 	return (
-		<div className='flex gap-2 mt-2'>
+		<div className='flex flex-wrap gap-2 mt-2'>
 			{path?.map((item, index) => {
 				return (
 					<Image 
