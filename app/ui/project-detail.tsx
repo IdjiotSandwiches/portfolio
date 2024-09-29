@@ -47,10 +47,10 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ github, path, imag
             	</ModalBody>
 					<ModalFooter className="flex-col justify-start">
 						{ carouselDesc }
-						<h3 className="font-medium text-primary">Tech used:</h3>
 						<p>
-							Github Repository: <Link href={github} className="text-primary hover:text-secondary">{ title }</Link>
+							Github Repository: <Link href={github} className="text-primary hover:text-secondary underline">{ title }</Link>
 						</p>
+						<h3 className="font-medium text-primary">Tech used:</h3>
 						<LogoContainer path={ path }/>
 					</ModalFooter>
          	</>
