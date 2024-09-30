@@ -34,7 +34,7 @@ export const TimelineCell: React.FC<TimelineProps> = ({ time, studyPlace, desc, 
 				{ studyPlace }
 			</Typography>
 			<Typography className={`text-gray-500 ${fredoka.className}`}>{ desc }</Typography>
-			<Typography className={`font-bold text-secondary ${fredoka.className}`} variant="h6" component="span">{ extraDesc }</Typography>
+			<Typography className={`font-medium text-secondary ${fredoka.className}`} variant="h6" component="span">{ extraDesc }</Typography>
 			<LogoContainer path={ logo } />
 		</TimelineContent>
 	</TimelineItem>             

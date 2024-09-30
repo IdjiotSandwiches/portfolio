@@ -13,7 +13,7 @@ export default function EducationSection() {
 	const isLargeScreen = useMediaQuery(theme.breakpoints.up('sm'));
 
 	return (
-		<section id="education" className="pt-20 min-h-[calc(100vh-40vh)]">
+		<section id="education" className="pt-20 min-h-[calc(100vh-40vh)] pb-20">
         	<h1 className="drop-shadow-sm text-5xl text-primary text-center font-medium mb-8">Education Journey</h1>
         	<Timeline 
 				sx={ isLargeScreen ? {} : {
@@ -34,7 +34,7 @@ export default function EducationSection() {
 				<TimelineCell 
 					time="2022 - Present"
 					studyPlace="Bina Nusantara University"
-					desc="Computer Science major currently enrolled in an Artificial Intelligence course."
+					desc="Computer Science major currently enrolled in an Artificial Intelligence courses."
 					icon={ <SchoolIcon sx={{ fontSize: "35px" }} /> }
 				/>
 			</Timeline>

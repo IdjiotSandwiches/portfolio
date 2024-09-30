@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs"
 import { RxDotFilled } from "react-icons/rx";
+import { Image } from "@nextui-org/image";
 
 interface PropType {
   slides: string[];
@@ -26,12 +27,16 @@ export const Carousel: React.FC<PropType> = ({ slides }) => {
   };
 
   return (
-    <div className="max-w-full h-[450px] w-full m-auto relative group">
-      <div style={{backgroundImage: `url(${slides[currentIndex]})`}} className="w-full h-[420px] rounded-2xl bg-top bg-cover duration-200"></div>
-      <div className="hidden select-none group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+    <div className="w-full h-auto m-auto relative">
+      <Image 
+        src={slides[currentIndex]}
+        alt={slides[currentIndex]}
+        className="w-full h-full rounded-2xl bg-top bg-no-repeat object-contain"
+      />
+      <div className="z-50 select-none absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
         <BsChevronCompactLeft onClick={prevSlide} size={30}/>
       </div>
-      <div className="hidden select-none group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+      <div className="z-50 select-none absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
         <BsChevronCompactRight onClick={nextSlide} size={30}/>
       </div>
       <div className="flex top-4 justify-center pt-4">

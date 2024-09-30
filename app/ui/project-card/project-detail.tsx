@@ -36,12 +36,12 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ github, path, imag
 					<ModalHeader className="font-medium text-xl">
 						{ title }
 					</ModalHeader>
-            	<ModalBody>	
+            	<ModalBody className="scrollbar-hide flex justify-center items-center">	
 						<Carousel slides={imagePath} />
             	</ModalBody>
 					<ModalBody className="flex-col justify-start">
 						{ carouselDesc }
-						<p>
+						<p className="font-medium">
 							Github Repository: <Link href={github} className="text-primary hover:text-secondary underline">{ title }</Link>
 						</p>
 						<h3 className="font-medium text-primary">Tech used:</h3>

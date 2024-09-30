@@ -12,9 +12,6 @@ export default function Home() {
       <ExperienceSection />
       <ProjectSection />
       <EducationSection />
-      <section id="contact" className="pt-20 min-h-[calc(100vh-40vh)]">
-
-      </section>
     </div>
   );
 }
