@@ -18,9 +18,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth bg-white">
+    <html lang="en" className="scroll-smooth">
       <body
-        className={`${fredoka.className} antialiased`}
+        className={`${fredoka.className} antialiased bg-white`}
       >
         <NavigationBar />
         <NextUIProvider className="flex justify-center w-full">
