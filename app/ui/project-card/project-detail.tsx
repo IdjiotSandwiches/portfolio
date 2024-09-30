@@ -1,6 +1,6 @@
 import React from "react";
 import { Carousel } from "@/app/ui/project-card/carousel";
-import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter } from "@nextui-org/react";
+import { Modal, ModalContent, ModalHeader, ModalBody } from "@nextui-org/react";
 import { LogoContainer } from "@/app/ui/logo-container";
 import Link from "next/link";
 
@@ -42,7 +42,14 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ github, path, imag
 					<ModalBody className="flex-col justify-start">
 						{ carouselDesc }
 						<p className="font-medium">
-							Github Repository: <Link href={github} className="text-primary hover:text-secondary underline">{ title }</Link>
+							Github Repository: <Link 
+									href={github} 
+									rel="noopener noreferrer"
+									target="_blank"
+									className="text-primary hover:text-secondary underline"
+								>
+									{ title }
+								</Link>
 						</p>
 						<h3 className="font-medium text-primary">Tech used:</h3>
 						<LogoContainer path={ path }/>

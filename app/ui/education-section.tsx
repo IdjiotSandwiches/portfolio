@@ -13,7 +13,7 @@ export default function EducationSection() {
 	const isLargeScreen = useMediaQuery(theme.breakpoints.up('sm'));
 
 	return (
-		<section id="education" className="pt-20 min-h-[calc(100vh-40vh)] pb-20">
+		<section id="education" className="pt-20 min-h-[calc(100vh-40vh)] xl:pb-20">
         	<h1 className="drop-shadow-sm text-5xl text-primary text-center font-medium mb-8">Education Journey</h1>
         	<Timeline 
 				sx={ isLargeScreen ? {} : {
