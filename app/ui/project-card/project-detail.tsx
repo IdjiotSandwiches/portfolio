@@ -31,7 +31,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ github, path, imag
 			className="text-gray-900"
    	>
       	<ModalContent>
-         	{(onClose) => (
+         	{() => (
          	<>
 					<ModalHeader className="font-medium text-xl">
 						{ title }
