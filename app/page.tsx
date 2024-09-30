@@ -2,7 +2,7 @@ import ExperienceSection from "@/app/ui/experience-section";
 import LandingPageSection from "@/app/ui/landing-page-section";
 import EducationSection from "@/app/ui/education-section";
 import AboutSection from "@/app/ui/about-section";
-import ProjectSection from "@/app/ui/project-section";
+import ProjectSection from "@/app/ui/project-card/project-section";
 
 export default function Home() {
   return (

@@ -1,20 +1,15 @@
 "use client";
 
 import { Card, CardBody, CardFooter, Image } from "@nextui-org/react";
-import { ProjectDetail } from "./project-detail";
+import { ProjectDetail } from "@/app/ui/project-card/project-detail";
 import { useDisclosure } from "@nextui-org/react";
-
-interface ImageData {
-	path: string;
-	alt: string;
-}
 
 interface CardProps {
 	srcImage: string;
 	altImage: string;
 	title: string;
 	desc: string;
-	imagePath: ImageData[];
+	imagePath: string[];
 	carouselDesc?: string;
 	path?: string[];
 	github: string;

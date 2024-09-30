@@ -1,102 +1,36 @@
 "use client";
 
-import { ProjectCard } from "@/app/ui/project-card";
+import { ProjectCard } from "@/app/ui/project-card/project-card";
 
 const miniHrmsRebuild = [
-  {
-    path: '/mini-hrms-rebuild/login.png',
-    alt: 'login-page',
-  },
-  {
-    path: '/mini-hrms-rebuild/register.png',
-    alt: 'register-page',
-  },
-  {
-    path: '/mini-hrms-rebuild/attendance.png',
-    alt: 'attendance-page',
-  },
-  {
-    path: '/mini-hrms-rebuild/input-schedule.png',
-    alt: 'input-schedule-page',
-  },
-  {
-    path: '/mini-hrms-rebuild/report.png',
-    alt: 'report-page',
-  },
-  {
-    path: '/mini-hrms-rebuild/edit-profile.png',
-    alt: 'edit-profile-page',
-  },
-  {
-    path: '/mini-hrms-rebuild/change-password.png',
-    alt: 'change-password-page',
-  },
-  {
-    path: '/mini-hrms-rebuild/dashboard.png',
-    alt: 'dashboard-page',
-  },
-  {
-    path: '/mini-hrms-rebuild/user-list.png',
-    alt: 'user-list-page',
-  },
-  {
-    path: '/mini-hrms-rebuild/edit-user.png',
-    alt: 'edit-user-page',
-  },
+  '/mini-hrms-rebuild/login.png',
+  '/mini-hrms-rebuild/register.png',
+  '/mini-hrms-rebuild/attendance.png',
+  '/mini-hrms-rebuild/input-schedule.png',
+  '/mini-hrms-rebuild/report.png',
+  '/mini-hrms-rebuild/edit-profile.png',
+  '/mini-hrms-rebuild/change-password.png',
+  '/mini-hrms-rebuild/dashboard.png',
+  '/mini-hrms-rebuild/user-list.png',
+  '/mini-hrms-rebuild/edit-user.png',
 ]
 
 const watchGoods = [
-  {
-    path: '/watch-goods/home.png',
-    alt: 'home',
-  },
-  {
-    path: '/watch-goods/products.png',
-    alt: 'products',
-  },
-  {
-    path: '/watch-goods/about-us.png',
-    alt: 'about-us',
-  },
-  {
-    path: '/watch-goods/locations.png',
-    alt: 'locations',
-  },
-  {
-    path: '/watch-goods/contact-us.png',
-    alt: 'contact-us',
-  },
+  '/watch-goods/home.png',
+  '/watch-goods/products.png',
+  '/watch-goods/about-us.png',
+  '/watch-goods/locations.png',
+  '/watch-goods/contact-us.png',
 ]
 
 const mlLoans = [
-  {
-    path: '/ml-loans/home.png',
-    alt: 'home',
-  },
-  {
-    path: '/ml-loans/eda.png',
-    alt: 'eda',
-  },
-  {
-    path: '/ml-loans/desc.png',
-    alt: 'desc',
-  },
-  {
-    path: '/ml-loans/data-preprocessing.png',
-    alt: 'data-preprocessing',
-  },
-  {
-    path: '/ml-loans/model-training.png',
-    alt: 'model-training',
-  },
-  {
-    path: '/ml-loans/prediction-demo.png',
-    alt: 'prediction-demo',
-  },
-  {
-    path: '/ml-loans/prediction-result.png',
-    alt: 'prediction-result',
-  },
+  '/ml-loans/home.png',
+  '/ml-loans/eda.png',
+  '/ml-loans/desc.png',
+  '/ml-loans/data-preprocessing.png',
+  '/ml-loans/model-training.png',
+  '/ml-loans/prediction-demo.png',
+  '/ml-loans/prediction-result.png',
 ]
 
 export default function ProjectSection() {
