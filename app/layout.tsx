@@ -7,6 +7,9 @@ import NavigationBar from "@/app/ui/navigation/navigation-bar";
 export const metadata: Metadata = {
   title: "Vin's Portfolio",
   description: "A portfolio presented by me.",
+  icons: {
+    icon: "/Logo.png"
+  },
 };
 
 export default function RootLayout({
