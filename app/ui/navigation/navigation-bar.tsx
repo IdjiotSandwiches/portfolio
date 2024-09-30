@@ -28,7 +28,7 @@ export default function NavigationBar() {
 	];
 
 	return (
-		<Navbar maxWidth="lg" onMenuOpenChange={ setIsMenuOpen } isBlurred={ false }>
+		<Navbar maxWidth="lg" onMenuOpenChange={ setIsMenuOpen } isBlurred={ false } className="bg-white">
 			<NavbarContent>
 				<NavbarMenuToggle
 					aria-label={isMenuOpen ? "Close menu" : "Open menu"}
