@@ -1,5 +1,5 @@
 import React from "react";
-import { Carousel } from "@/app/ui/project-card/carousel";
+import { ProjectCarousel } from "@/app/ui/project-card/carousel";
 import { Modal, ModalContent, ModalHeader, ModalBody } from "@nextui-org/react";
 import { LogoContainer } from "@/app/ui/logo-container";
 import Link from "next/link";
@@ -21,7 +21,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ github, path, imag
       	onOpenChange={onOpenChange}
       	scrollBehavior="inside"
 			radius="md"
-			size="5xl"
+			size="4xl"
 			classNames={{
 				body: "py-4 border-t-[1px] border-gray-300",
 				base: "border-[#292f46]",
@@ -36,10 +36,10 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ github, path, imag
 					<ModalHeader className="font-medium text-xl">
 						{ title }
 					</ModalHeader>
-            	<ModalBody className="scrollbar-hide flex justify-center items-center">	
-						<Carousel slides={imagePath} />
+            	<ModalBody className="scrollbar-hide flex justify-center items-center p-0">	
+						<ProjectCarousel slides={imagePath} />
             	</ModalBody>
-					<ModalBody className="flex-col justify-start">
+					<ModalBody className="flex-col justify-start max-h-screen py-4">
 						{ carouselDesc }
 						<p className="font-medium">
 							Github Repository: <Link 
