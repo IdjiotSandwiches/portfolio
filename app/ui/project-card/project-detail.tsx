@@ -1,5 +1,5 @@
 import React from "react";
-import { Carousel } from "@/app/ui/project-card/carousel";
+import { ProjectCarousel } from "@/app/ui/project-card/carousel";
 import { Modal, ModalContent, ModalHeader, ModalBody } from "@nextui-org/react";
 import { LogoContainer } from "@/app/ui/logo-container";
 import Link from "next/link";
@@ -37,7 +37,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ github, path, imag
 						{ title }
 					</ModalHeader>
             	<ModalBody className="scrollbar-hide flex justify-center items-center">	
-						<Carousel slides={imagePath} />
+						<ProjectCarousel slides={imagePath} />
             	</ModalBody>
 					<ModalBody className="flex-col justify-start">
 						{ carouselDesc }
