@@ -36,6 +36,9 @@ export default function NavigationBar() {
 				<NavbarMenuToggle
 					aria-label={isMenuOpen ? "Close menu" : "Open menu"}
 					className="sm:hidden"
+					style={{
+						color: 'rgb(75, 85, 99)',
+					 }}
 				/>
 				<Link className="flex gap-2" href="#">
 					<Image 
