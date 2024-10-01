@@ -20,7 +20,7 @@ export const ProjectCard: React.FC<CardProps> = ({ github, srcImage, altImage, t
 
 	return (
 		<>
-			<Card shadow="sm" className="hover:bg-gray-100 text-gray-900" isPressable onClick={ onOpen }>
+			<Card shadow="sm" className="hover:bg-gray-100" isPressable onClick={ onOpen }>
 				<CardBody className="overflow-visible p-0">
 					<Image
 						shadow="sm"

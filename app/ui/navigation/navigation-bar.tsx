@@ -31,18 +31,11 @@ export default function NavigationBar() {
 			maxWidth="lg" 
 			onMenuOpenChange={ setIsMenuOpen } 
 			isBlurred={ false } 
-			className="bg-white" 
-			classNames={{
-				menu: "bg-white",
-			}}
 		>
 			<NavbarContent>
 				<NavbarMenuToggle
 					aria-label={isMenuOpen ? "Close menu" : "Open menu"}
 					className="sm:hidden"
-					style={{
-						color: 'rgb(75, 85, 99)',
-					 }}
 				/>
 				<Link className="flex gap-2" href="#">
 					<Image 

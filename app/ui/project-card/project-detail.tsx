@@ -28,7 +28,6 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ github, path, imag
 				footer: "border-t-[1px] border-gray-300",
 				closeButton: "hover:bg-white/5 active:bg-white/10",
 			}}
-			className="text-gray-900"
    	>
       	<ModalContent>
          	{() => (
