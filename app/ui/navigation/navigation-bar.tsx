@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import React from 'react';
 import { NavLinks } from '@/app/ui/navigation/nav-links';
+import { NavMenuLinks } from '@/app/ui/navigation/nav-menu-links';
 import { Navbar, NavbarContent, NavbarMenuToggle, NavbarMenu, Link } from "@nextui-org/react";
 
 export default function NavigationBar() {
@@ -61,8 +62,8 @@ export default function NavigationBar() {
 			</NavbarContent>
 			<NavbarMenu>
 				{menuItems.map((item, index) => (
-					<NavLinks 
-						key={`${item}-${index}`} 
+					<NavMenuLinks 
+						key={`${item.name}-${index}`} 
 						name={ item.name }
 						path={ item.path }
 					/>
