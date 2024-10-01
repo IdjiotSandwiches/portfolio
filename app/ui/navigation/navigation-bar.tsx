@@ -1,13 +1,13 @@
 "use client";
 
 import Image from 'next/image';
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLinks } from '@/app/ui/navigation/nav-links';
 import { NavMenuLinks } from '@/app/ui/navigation/nav-menu-links';
 import { Navbar, NavbarContent, NavbarMenuToggle, NavbarMenu, Link } from "@nextui-org/react";
 
 export default function NavigationBar() {
-	const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const menuItems = [
 		{
 			name: 'About',
