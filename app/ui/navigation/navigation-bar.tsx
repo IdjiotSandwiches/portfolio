@@ -31,10 +31,6 @@ export default function NavigationBar() {
 			maxWidth="lg" 
 			onMenuOpenChange={ setIsMenuOpen } 
 			isBlurred={ false } 
-			className="bg-white" 
-			classNames={{
-				menu: "bg-white",
-			}}
 		>
 			<NavbarContent>
 				<NavbarMenuToggle
