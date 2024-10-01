@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${fredoka.className} antialiased`}
+        className={`${fredoka.className} antialiased text-gray-900`}
       >
         <NavigationBar />
         <NextUIProvider className="flex justify-center w-full">
