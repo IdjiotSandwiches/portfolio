@@ -11,7 +11,7 @@ export default function Home() {
       <div className="relative px-8 w-full lg:max-w-screen-lg gap-10">
         <LandingPageSection />
         <AboutSection />
-        <ExperienceSection />
+        {/* <ExperienceSection /> */}
         <ProjectSection />
         <EducationSection />
         <Contact />
