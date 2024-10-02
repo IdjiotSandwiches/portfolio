@@ -10,7 +10,7 @@ export const TimelineIcons: React.FC<TimelineIconsProps> = ({ icons }) => {
 			{icons.map((Icon, index) => {
 				return (
 					<div 
-						key={`${Icon}-${index}`}
+						key={`${Icon.name}-${index}`}
 						className="border-3 border-amber-600 bg-white w-full h-full rounded-full flex justify-center items-center"
 					>
 						<Icon 
