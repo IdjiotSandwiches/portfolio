@@ -1,7 +1,7 @@
 import React from "react";
 import { Chrono } from "react-chrono";
 import { IconType } from "react-icons/lib";
-import { LogoContainer } from "@/app/ui/logo-container";
+import { LogoContainer } from "@/app/ui/logo/logo-container";
 
 interface TimelineProps {
 	items: {

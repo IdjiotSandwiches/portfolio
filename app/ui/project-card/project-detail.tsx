@@ -1,7 +1,7 @@
 import React from "react";
 import { ProjectCarousel } from "@/app/ui/project-card/carousel";
 import { Modal, ModalContent, ModalHeader, ModalBody } from "@nextui-org/react";
-import { LogoContainer } from "@/app/ui/logo-container";
+import { LogoContainer } from "@/app/ui/logo/logo-container";
 import Link from "next/link";
 
 interface ProjectDetailProps {
