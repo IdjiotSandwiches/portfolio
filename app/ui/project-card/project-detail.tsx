@@ -35,10 +35,11 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ github, path, imag
 					<ModalHeader className="font-medium text-xl">
 						{ title }
 					</ModalHeader>
-            	<ModalBody className="scrollbar-hide flex justify-center items-center p-0">	
+            	<ModalBody className="scrollbar-hide flex justify-center items-center py-2 px-0 lg:p-0 gap-0">	
 						<ProjectCarousel slides={imagePath} />
+						<p className="lg:hidden text-sm font-medium text-gray-500 underline">Swipe left or right</p>
             	</ModalBody>
-					<ModalBody className="flex-col justify-start max-h-screen py-4">
+					<ModalBody className="flex-col justify-start max-h-44 md:max-h-screen py-4">
 						{ carouselDesc }
 						<p className="font-medium">
 							Github Repository: <Link 
