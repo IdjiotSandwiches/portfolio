@@ -57,7 +57,7 @@ export const Timeline: React.FC<TimelineProps> = ({ items, mode, icons }) => {
 								<h2 className="font-medium text-gray-900 text-xl">{item.place}</h2>
 								<p className="text-gray-500">{item.desc}</p>
 							</div>
-							<div>
+							<div className={`${(item.extraDesc || item.logo) ? 'block' : 'hidden'}`}>
 								<h4 className="font-medium text-secondary">{item.extraDesc}</h4>
 								<LogoContainer path={item.logo}/>
 							</div>
