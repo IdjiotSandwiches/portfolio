@@ -1,6 +1,6 @@
 "use client";
 
-import { Timeline } from '@/app/ui/timeline';
+import { Timeline } from '@/app/ui/timeline/timeline';
 import { FaSchool } from "react-icons/fa";
 import { IoSchoolSharp } from "react-icons/io5";
 

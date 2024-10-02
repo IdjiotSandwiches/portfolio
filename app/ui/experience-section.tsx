@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Timeline } from "@/app/ui/timeline";
+import { Timeline } from "@/app/ui/timeline/timeline";
 import { MdWork } from "react-icons/md";
 
 export default function ExperienceSection() {
