@@ -1,4 +1,4 @@
-// import ExperienceSection from "@/app/ui/experience-section";
+import ExperienceSection from "@/app/ui/experience-section";
 import LandingPageSection from "@/app/ui/landing-page-section";
 import EducationSection from "@/app/ui/education-section";
 import AboutSection from "@/app/ui/about-section";
@@ -11,7 +11,7 @@ export default function Home() {
       <div className="relative px-8 w-full lg:max-w-screen-lg gap-10">
         <LandingPageSection />
         <AboutSection />
-        {/* <ExperienceSection /> */}
+        <ExperienceSection />
         <ProjectSection />
         <EducationSection />
         <Contact />

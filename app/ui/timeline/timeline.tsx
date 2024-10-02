@@ -1,7 +1,9 @@
 import React from "react";
-import { Chrono } from "react-chrono";
 import { IconType } from "react-icons/lib";
 import { LogoContainer } from "@/app/ui/logo/logo-container";
+import dynamic from "next/dynamic";
+
+const Chrono = dynamic(() => import('react-chrono').then((mode) => mode.Chrono), { ssr: false });
 
 interface TimelineProps {
 	items: {
