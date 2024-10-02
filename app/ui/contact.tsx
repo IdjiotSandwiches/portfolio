@@ -19,7 +19,7 @@ export default function Contact() {
 				/>
 			</Link>
 			<Link 
-				href="https://www.linkedin.com/in/vincen-38272a32a/"
+				href="www.linkedin.com/in/vincen-without-tea"
 				rel="noopener noreferrer"
 				target="_blank"
 			>
