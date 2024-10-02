@@ -21,6 +21,7 @@ export const ProjectCarousel: React.FC<PropType> = ({ slides }) => {
             <div className="p-1">
               <Image 
                 src={item}
+                alt={`${item}-${index}`}
                 key={index}
                 className="text-2xl cursor-pointer"
               />
