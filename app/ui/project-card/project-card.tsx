@@ -13,6 +13,7 @@ interface CardProps {
 	carouselDesc?: string;
 	path?: string[];
 	github: string;
+	viewLink?: string;
 }
 
 export const ProjectCard: React.FC<CardProps> = ({ github, srcImage, altImage, title, desc, imagePath, carouselDesc, path }) => {

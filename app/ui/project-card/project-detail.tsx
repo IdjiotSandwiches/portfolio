@@ -12,6 +12,7 @@ interface ProjectDetailProps {
 	carouselDesc?: string;
 	path?: string[];
 	github: string;
+	viewLink?: string;
 }
 
 export const ProjectDetail: React.FC<ProjectDetailProps> = ({ github, path, imagePath, title, carouselDesc, isOpen, onOpenChange }) => {
