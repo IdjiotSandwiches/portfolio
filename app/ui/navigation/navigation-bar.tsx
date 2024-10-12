@@ -1,9 +1,9 @@
 "use client";
 
-import Image from 'next/image';
-import React, { useState } from 'react';
-import { NavLinks } from '@/app/ui/navigation/nav-links';
-import { NavMenuLinks } from '@/app/ui/navigation/nav-menu-links';
+import Image from "next/image";
+import React, { useState } from "react";
+import { NavLinks } from "@/app/ui/navigation/nav-links";
+import { NavMenuLinks } from "@/app/ui/navigation/nav-menu-links";
 import { Navbar, NavbarContent, NavbarMenuToggle, NavbarMenu, Link } from "@nextui-org/react";
 
 export default function NavigationBar() {
@@ -12,6 +12,10 @@ export default function NavigationBar() {
 		{
 			name: 'About',
 			path: '#about',
+		},
+		{
+			name: 'Skills',
+			path: '#skill',
 		},
 		{
 			name: 'Experience',
