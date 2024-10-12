@@ -13,9 +13,10 @@ interface CardProps {
 	carouselDesc?: string;
 	path?: string[];
 	github: string;
+	viewLink: string;
 }
 
-export const ProjectCard: React.FC<CardProps> = ({ github, srcImage, altImage, title, desc, imagePath, carouselDesc, path }) => {
+export const ProjectCard: React.FC<CardProps> = ({ github, viewLink, srcImage, altImage, title, desc, imagePath, carouselDesc, path }) => {
 	const {isOpen, onOpen, onOpenChange} = useDisclosure();
 
 	return (
@@ -44,6 +45,7 @@ export const ProjectCard: React.FC<CardProps> = ({ github, srcImage, altImage, t
 				carouselDesc={ carouselDesc }
 				path={ path }
 				github={ github }
+				viewLink={ viewLink }
 			/>
 		</>
 	);

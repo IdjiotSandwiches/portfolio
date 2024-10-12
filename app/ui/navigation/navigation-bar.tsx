@@ -14,6 +14,10 @@ export default function NavigationBar() {
 			path: '#about',
 		},
 		{
+			name: 'Skills',
+			path: '#skill',
+		},
+		{
 			name: 'Experience',
 			path: '#experience'
 		},
