@@ -7,7 +7,7 @@ import { IoSchoolSharp } from "react-icons/io5";
 export default function EducationSection() {
 	return (
 		<section id="education" className="pt-20 min-h-[calc(100vh-40vh)] xl:pb-20">
-        	<h1 className="drop-shadow-sm text-5xl text-primary text-center font-medium mb-8">Education Journey</h1>
+      <h1 className="drop-shadow-sm text-5xl text-primary text-center font-medium mb-8">Education Journey</h1>
 			<Timeline 
 				items={[
 					{
