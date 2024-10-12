@@ -50,7 +50,7 @@ export default function ProjectSection() {
             '/svg/git.svg',
          ],
          github: "https://github.com/IdjiotSandwiches/Machine_Learning_Final_Project.git",
-         viewLink: "german-loan-la01.streamlit.app/",
+         viewLink: "https://german-loan-la01.streamlit.app/",
       },
       {
          srcImage: "/mini-hrms-rebuild/dashboard.png",
