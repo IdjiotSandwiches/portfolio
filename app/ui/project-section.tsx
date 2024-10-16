@@ -23,7 +23,7 @@ export default function ProjectSection() {
             '/svg/js.svg',
          ],
          github: "https://github.com/IdjiotSandwiches/watch-goods.git",
-         viewLink: "",
+         viewLink: "https://watch-goods-kappa.vercel.app/",
       },
       {
          srcImage: "/ml-loans/home.png",
