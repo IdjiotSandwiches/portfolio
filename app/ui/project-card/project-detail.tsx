@@ -55,15 +55,13 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ github, viewLink, 
 								/>
 								<p>Github</p>
 							</Link>
-							<div className="flex items-center gap-2 rounded-lg bg-primary border-2 p-2 px-4 hover:bg-secondary text-white">
-								<Link 
-									href={ viewLink } 
-									rel="noopener noreferrer"
-									target="_blank"
-								>
-									View Website
-								</Link>
-							</div>
+							<Link 
+								href={ viewLink } 
+								rel="noopener noreferrer"
+								target="_blank"
+								className="flex items-center gap-2 rounded-lg bg-primary border-2 p-2 px-4 hover:bg-secondary text-white">
+								<p>View Website</p>
+							</Link>
 						</div>
 						<div>
 							<h3 className="font-medium text-primary text-lg">Tech used:</h3>
