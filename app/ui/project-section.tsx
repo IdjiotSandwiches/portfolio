@@ -58,13 +58,16 @@ export default function ProjectSection() {
          title: "Mini HRMS Rebuild",
          desc: "Refine version of Mini HRMS by utilizing the knowledge I gained from my experience in IT Division.",
          imagePath: [
-            '/ml-loans/home.png',
-            '/ml-loans/eda.png',
-            '/ml-loans/desc.png',
-            '/ml-loans/data-preprocessing.png',
-            '/ml-loans/model-training.png',
-            '/ml-loans/prediction-demo.png',
-            '/ml-loans/prediction-result.png',
+            '/mini-hrms-rebuild/login.png',
+            '/mini-hrms-rebuild/register.png',
+            '/mini-hrms-rebuild/attendance.png',
+            '/mini-hrms-rebuild/input-schedule.png',
+            '/mini-hrms-rebuild/report.png',
+            '/mini-hrms-rebuild/edit-profile.png',
+            '/mini-hrms-rebuild/change-password.png',
+            '/mini-hrms-rebuild/dashboard.png',
+            '/mini-hrms-rebuild/user-list.png',
+            '/mini-hrms-rebuild/edit-user.png',
          ],
          carouselDesc: "Mini HRMS Rebuild is my personal project to revamp the original Mini HRMS, which was initially developed by a team of new IT Division Associate Members to learn PHP and Laravel before engaging in real projects.",
          path: [
@@ -80,6 +83,27 @@ export default function ProjectSection() {
          ],
          github: "https://github.com/IdjiotSandwiches/mini-hrms-rebuild.git",
          viewLink: "",
+      },
+      {
+         srcImage: '/sentiment-analysis/homepage.png',
+         altImage: "sentiment-analysis-BERT",
+         title: "Sentiment Analysis & Context Extraction using DistilBERT",
+         desc: "Natural Language Processing Course Team Project",
+         imagePath: [
+            '/sentiment-analysis/homepage.png',
+            '/sentiment-analysis/result.png',
+         ],
+         carouselDesc: "This project aims to perform sentiment analysis and capture the context behind smartphone reviews, and I\’m responsible for the NER model.",
+         path: [
+            '/svg/python.svg',
+            '/svg/pandas.svg',
+            '/svg/scikitlearn.svg',
+            '/svg/pytorch.svg',
+            '/svg/hugging-face.svg',
+            '/svg/git.svg',
+         ],
+         github: "https://github.com/IdjiotSandwiches/Combining-Sentiment-Analysis-and-Named-Entity-Recognition-in-Smartphone-Reviews.git",
+         viewLink: "https://huggingface.co/spaces/straightline777/Sentiment_Analysis_DistilBERT",
       }
    ]
 

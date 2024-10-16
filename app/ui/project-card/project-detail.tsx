@@ -44,28 +44,24 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ github, viewLink, 
 					<ModalBody className="flex-col justify-start max-h-44 md:max-h-screen py-4">
 						{ carouselDesc }
 						<div className="flex gap-4 font-medium">
-							<div className="flex items-center gap-2 rounded-lg border-gray-900 border-2 p-2 px-4 hover:bg-gray-100 text-gray-900">
+							<Link 
+								href={ github } 
+								rel="noopener noreferrer"
+								target="_blank"
+								className="flex items-center gap-2 rounded-lg border-gray-900 border-2 p-2 px-4 hover:bg-gray-100 text-gray-900">
 								<Image 
 									src="/svg/github.svg"
 									className="w-8"
 								/>
-								<Link 
-									href={ github } 
-									rel="noopener noreferrer"
-									target="_blank"
-								>
-									Github
-								</Link>
-							</div>
-							<div className="flex items-center gap-2 rounded-lg bg-primary border-2 p-2 px-4 hover:bg-secondary text-white">
-								<Link 
-									href={ viewLink } 
-									rel="noopener noreferrer"
-									target="_blank"
-								>
-									View Website
-								</Link>
-							</div>
+								<p>Github</p>
+							</Link>
+							<Link 
+								href={ viewLink } 
+								rel="noopener noreferrer"
+								target="_blank"
+								className="flex items-center gap-2 rounded-lg bg-primary border-2 p-2 px-4 hover:bg-secondary text-white">
+								<p>View Website</p>
+							</Link>
 						</div>
 						<div>
 							<h3 className="font-medium text-primary text-lg">Tech used:</h3>
