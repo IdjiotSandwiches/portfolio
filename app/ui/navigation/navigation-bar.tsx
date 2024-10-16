@@ -52,7 +52,7 @@ export default function NavigationBar() {
 						height={50}
 						alt="Logo"
 					/>		
-					<p className="text-lg text-primary font-medium text-inherit">Idjiot Sandwiches</p>
+					<p className="text-lg text-primary font-medium text-inherit">Vincen</p>
 				</Link>
 			</NavbarContent>
 			<NavbarContent className="hidden sm:flex gap-4" justify="center">
