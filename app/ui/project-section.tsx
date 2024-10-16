@@ -83,6 +83,27 @@ export default function ProjectSection() {
          ],
          github: "https://github.com/IdjiotSandwiches/mini-hrms-rebuild.git",
          viewLink: "",
+      },
+      {
+         srcImage: '/sentiment-analysis/homepage.png',
+         altImage: "sentiment-analysis-BERT",
+         title: "Sentiment Analysis & Context Extraction using DistilBERT",
+         desc: "Natural Language Processing Course Team Project",
+         imagePath: [
+            '/sentiment-analysis/homepage.png',
+            '/sentiment-analysis/result.png',
+         ],
+         carouselDesc: "This project aims to perform sentiment analysis and capture the context behind smartphone reviews, and I\’m responsible for the NER model.",
+         path: [
+            '/svg/python.svg',
+            '/svg/pandas.svg',
+            '/svg/scikitlearn.svg',
+            '/svg/pytorch.svg',
+            '/svg/hugging-face.svg',
+            '/svg/git.svg',
+         ],
+         github: "https://github.com/IdjiotSandwiches/Combining-Sentiment-Analysis-and-Named-Entity-Recognition-in-Smartphone-Reviews.git",
+         viewLink: "https://huggingface.co/spaces/straightline777/Sentiment_Analysis_DistilBERT",
       }
    ]
 
