@@ -104,6 +104,30 @@ export default function ProjectSection() {
          ],
          github: "https://github.com/IdjiotSandwiches/Combining-Sentiment-Analysis-and-Named-Entity-Recognition-in-Smartphone-Reviews.git",
          viewLink: "https://huggingface.co/spaces/straightline777/Sentiment_Analysis_DistilBERT",
+      },
+      {
+         srcImage: '/portfolio/home.png',
+         altImage: "home",
+         title: "Portfolio",
+         desc: "Personal portfolio website.",
+         imagePath: [
+            '/portfolio/home.png',
+            '/portfolio/skills.png',
+            '/portfolio/projects.png',
+         ],
+         carouselDesc: "Personal portfolio website developed using NextJS.",
+         path: [
+            '/svg/html.svg',
+            '/svg/css.svg',
+            '/svg/js.svg',
+            '/svg/tailwind.svg',
+            '/svg/nextjs.svg',
+            '/svg/typescript.svg',
+            '/svg/react.svg',
+            '/svg/git.svg',
+         ],
+         github: "https://github.com/IdjiotSandwiches/portfolio.git",
+         viewLink: "https://idjiotsandwiches.vercel.app/",
       }
    ]
 
